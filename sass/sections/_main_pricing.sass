@@ -1,0 +1,155 @@
+.main__pricing
+	&__title
+		display: flex
+		flex-direction: column
+		padding-top: 75px
+		text-align: center
+		align-items: center
+		&__text
+			max-width: 706px
+			&:nth-child(1)
+				color: #18063c
+				font-family: Poppins, serif
+				font-size: 48px
+				line-height: 70px
+				font-weight: 600
+			&:nth-child(2)
+				font-family: Inter, serif
+				font-size: 18px
+				line-height: 36px
+				font-weight: 400
+				color: #404040
+				opacity: 0.8
+				margin-top: 20px
+				text-align: center
+	&__content
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		font-family: Inter, serif
+		gap: 30px
+		padding-bottom: 160px
+		&__card
+			border: 1px solid #FF553E
+			margin-top: 40px
+			width: 400px
+			border-radius: 100px
+			max-height: 608px
+			text-align: center
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			&:nth-child(2)
+				background: #FF553E
+				color: white
+			&__head
+				padding-top: 48px
+				font-size: 48px
+				line-height: 68px
+				font-weight: 600
+				font-style: normal
+			&__text
+				font-size: 28px
+				color: #FF553E
+				line-height: 52px
+				font-weight: 600
+				&:nth-child(1)
+					margin-top: 56px
+				&:nth-child(2)
+					margin-top: 20px
+				.clarity
+					opacity: 0.8
+			&__cost
+				padding-top: 64px
+				display: flex
+				justify-content: center
+				align-items: baseline
+				padding-bottom: 64px
+				&__dollar
+					align-self: start
+					margin-top: 10px
+					line-height: 28px
+					opacity: 0.8
+					font-weight: 500
+				&__num
+					font-size: 64px
+					font-weight: 700
+					line-height: 100%
+				&__forever
+					opacity: 0.8
+					font-weight: 500
+					line-height: 28px
+				.zero
+					color: #404040
+					opacity: 0.7
+			&__button1
+				align-self: center
+				background: #FF553E
+				width: 240px
+				height: 74px
+				border-radius: 40px
+				margin-bottom: 48px
+				color: #FFFFFF
+			&__button2
+				align-self: center
+				background: #FFFFFF
+				width: 240px
+				height: 74px
+				border-radius: 40px
+				margin-bottom: 48px
+				color: #FF553E
+
+
+
+.toggle
+	margin: 4.5vh auto auto
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 300px
+	.text
+		font-family: Poppins, serif
+		font-weight: 500
+		font-size: 24px
+		line-height: 28px
+		color: #404040
+	.switch
+		position: relative
+		display: inline-block
+		width: 84px
+		height: 40px
+		margin: 0 20px
+	input
+		opacity: 0
+		width: 0
+		height: 0
+	.slider
+		position: absolute
+		cursor: pointer
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(255, 85, 62, 0.2)
+		-webkit-transition: .4s
+		transition: .4s
+		&:before
+			position: absolute
+			content: ""
+			height: 28px
+			width: 28px
+			left: 6px
+			bottom: 6px
+			background-color: #FF553E
+			-webkit-transition: .4s
+			transition: .4s
+	input
+		&:focus + .slider
+			box-shadow: 0 0 1px rgba(255, 85, 62, 0.2)
+		&:checked + .slider:before
+			transform: translateX(44px)
+	.slider.round
+		border-radius: 34px
+		&:before
+			border-radius: 50%
+
